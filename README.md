@@ -2,9 +2,9 @@
 An introductory walkthrough for sets in Python.
 
 ## Introduction
-Sets are one of several ways of organizing objects in Python - akin to lists, dictionaries, tuples, etc.  
+Sets are one of several ways of organizing objects in Python - akin to lists, dictionaries, tuples, etc. If you don't know about lists yet, make sure to get caught up on those first. 
 
-Say you're organizing music.  You can think of a set like a playlist in shuffle mode.  It's unordered, does not repeat songs, and it's easy to see which songs are or are not in your playlist.
+Say you're organizing music.  You can think of a "set" like a playlist in shuffle mode.  It's unordered, does not repeat songs, and it's easy to see which songs are or are not in your playlist.
 
 #### What Sets "Sets" Apart?
 
@@ -14,6 +14,7 @@ However, the inherent lack of order in sets makes them difficult to index.  Foru
 
 ## Working With Sets
 
+#### Creating Sets
 There are two ways to create sets.  One is using "{}" brackets, similar to a dictionary, but with single elements instead of key/value pairs:
 ```python
 set_x = {'a','b',3}
@@ -29,3 +30,8 @@ The `set()` funciton is especially useful for finding unique members of a list. 
 list_x = ['a','a','b','a','c','c','d']
 set(list_x)
 ```
+will return `{'a','b','c','d'}`
+
+#### Set Methods
+
+
