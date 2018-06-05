@@ -15,6 +15,12 @@ However, the inherent lack of order in sets makes them difficult to index.  Foru
 ## Working With Sets
 
 There are two ways to create sets.  One is using "{}" brackets, similar to a dictionary, but with single elements instead of key/value pairs:
-'''
+```python
 set_x = {'a','b',3}
-'''
+```
+
+You can also create a set out of a list using the `set()` function.
+```python
+set_x = set(['a','b',3])
+```
+
