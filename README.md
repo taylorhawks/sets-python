@@ -8,7 +8,7 @@ Say you're organizing music.  You can think of a "set" like a playlist in shuffl
 
 #### What Sets "Sets" Apart?
 
-What can make sets very useful is that all elements are unique, and they can have a much better computational performance when running certain functions when compared to lists.
+What can make sets very useful is that all elements are unique, and they can have a much better computational performance when running certain functions when compared to lists.  For example, `python i in set` performs much faster than `python i in list`.  These code snippets will return either `True` or `False`, and it is useful to use this code iteratively (in a loop), so time can matter.
 
 However, the inherent lack of order in sets makes them difficult to index.  Forutnately, it's easy to change back and forth between lists and sets using `list()` and `set()`.
 
@@ -33,5 +33,12 @@ set(list_x)
 will return `{'a','b','c','d'}`
 
 #### Set Methods
+Sets have several built-in functions that expand their functionality.
+
+```python
+x = {1,3,5,7,9}
+y = {1,2,3,4}
+```
 
 
+You can find more info here: https://docs.python.org/2/library/sets.html
