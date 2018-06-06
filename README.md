@@ -36,6 +36,27 @@ set(list_x)
 ```
 will return `{'a','b','c','d'}`
 
+#### Using Sets for Reference
+Sets are especially useful for generating booleans and referring to other objects.
+```python
+4 in {1,2,3}
+False
+
+'orange' in {'red','orange','yellow}
+True
+```
+
+This is especially useful in loops.
+```python
+for i in [1,2,3,4]:
+  i in {1,3,5,9}
+
+True
+False
+True
+False
+```
+
 #### Set Methods
 Sets have several built-in functions that expand their functionality.
 
@@ -49,19 +70,22 @@ The add function will add another element to the set.  If it already exists, not
 Remove removes an element.
 ```python
 x.add(10)
-{1,3,5,7,9,10}
+{1, 3, 5, 7, 9, 10}
 
 x.add(1)
-{1,3,5,7,9,10}
+{1, 3, 5, 7, 9, 10}
 
 x.remove(9)
-{1,3,5,7,10}
+{1, 3, 5, 7, 10}
+```
+Intersection and Union are two ways of combining sets.  Intersection returns the 
+```python
+x.intersection(y)
+{1, 2, 3, 4, 5, 7, 10}
+
+x.union(y)
+{1, 3}
 ```
 
-x.intersection()
-x.union()
 
-
-
-
-You can find more info here: https://docs.python.org/2/library/sets.html
+You can find more info in the official Python documentation here: https://docs.python.org/2/library/sets.html
