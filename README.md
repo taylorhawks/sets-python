@@ -78,7 +78,7 @@ x.add(1)
 x.remove(9)
 {1, 3, 5, 7, 10}
 ```
-Intersection and Union are two ways of combining sets.  Intersection returns the 
+Intersection and Union are two ways of combining sets.  Union returns both sets combined, of course eliminating duplicates.  Union gives only the elements in both.  These functions do not change `x` and `y` themselves. 
 ```python
 x.intersection(y)
 {1, 2, 3, 4, 5, 7, 10}
