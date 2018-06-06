@@ -8,9 +8,13 @@ Say you're organizing music.  You can think of a "set" like a playlist in shuffl
 
 #### What Sets "Sets" Apart?
 
-What can make sets very useful is that all elements are unique, and they can have a much better computational performance when running certain functions when compared to lists.  For example, `python i in set` performs much faster than `python i in list`.  These code snippets will return either `True` or `False`, and it is useful to use this code iteratively (in a loop), so time can matter.
+What can make sets very useful is that all elements are unique, and they can have a much better computational performance when running certain functions when compared to lists.  For example, `i in set` performs much faster than `i in list`.  These code snippets will return either `True` or `False`, and it is often useful to use similar code iteratively (in a loop), so time can matter.
 
 However, the inherent lack of order in sets makes them difficult to index.  Forutnately, it's easy to change back and forth between lists and sets using `list()` and `set()`.
+
+You can even nest them like this: `list(set(original_list))` to eliminate duplicates.
+
+Sets are mutable, so methods like `.add()` will change the set.
 
 ## Working With Sets
 
@@ -35,10 +39,29 @@ will return `{'a','b','c','d'}`
 #### Set Methods
 Sets have several built-in functions that expand their functionality.
 
+Let's start with two sets.
 ```python
 x = {1,3,5,7,9}
 y = {1,2,3,4}
 ```
+
+The add function will add another element to the set.  If it already exists, nothing changes.
+Remove removes an element.
+```python
+x.add(10)
+{1,3,5,7,9,10}
+
+x.add(1)
+{1,3,5,7,9,10}
+
+x.remove(9)
+{1,3,5,7,10}
+```
+
+x.intersection()
+x.union()
+
+
 
 
 You can find more info here: https://docs.python.org/2/library/sets.html
