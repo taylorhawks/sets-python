@@ -8,13 +8,13 @@ Say you're organizing music.  You can think of a "set" like a playlist in shuffl
 
 #### What Sets "Sets" Apart?
 
-What can make sets very useful is that all elements are unique, and they can have a much better computational performance when running certain functions when compared to lists.  For example, `i in set` performs much faster than `i in list`.  These code snippets will return either `True` or `False`, and it is often useful to use similar code iteratively (in a loop), so time can matter.
+What can make sets very useful is that all elements are unique, and they can have a much better computational performance when running certain functions when compared to lists.  For example, `i in set` performs much faster than `i in list`.  These code snippets will return either `True` or `False`, and it is often useful to use similar code iteratively (in a loop), so time can matter if you're performing a loop on a whole column of a dataset, for example.
 
 However, sets lack order making them difficult to index, iterate through, and otherwise select individual elements.  Forutnately, it's easy to change back and forth between lists and sets using `list()` and `set()`.
 
 You can even nest those functions like so: `list(set(original_list))`, if you wanted to eliminate duplicates in `original_list`.
 
-Sets are mutable, so methods like `.add()` will change the set.
+Also, are mutable, so methods like `.add()` will change the set.
 
 ## Working With Sets
 
