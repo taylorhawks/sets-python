@@ -14,7 +14,7 @@ However, sets lack order making them difficult to index, iterate through, and ot
 
 You can even nest those functions like so: `list(set(original_list))`, if you wanted to eliminate duplicates in `original_list`.
 
-Also, are mutable, so methods like `.add()` will change the set.
+Also, sets are mutable, so methods like `.add()` will change the set.
 
 ## Working With Sets
 
